@@ -87,7 +87,7 @@ gen### OSX template
 .LSOverride
 
 #special file
-public/js/credential/*.js
+#public/js/credential/*.js
 public/js/qa/*.js
 log
 authorphoto
