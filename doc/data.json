@@ -1,0 +1,424 @@
+{
+    "project": {},
+    "files": {
+        "admin.js": {
+            "name": "admin.js",
+            "modules": {},
+            "classes": {
+                "Admin": 1
+            },
+            "fors": {},
+            "namespaces": {}
+        },
+        "user.js": {
+            "name": "user.js",
+            "modules": {},
+            "classes": {
+                "User": 1
+            },
+            "fors": {},
+            "namespaces": {}
+        },
+        "work.js": {
+            "name": "work.js",
+            "modules": {},
+            "classes": {
+                "Work": 1
+            },
+            "fors": {},
+            "namespaces": {}
+        }
+    },
+    "modules": {},
+    "classes": {
+        "Admin": {
+            "name": "Admin",
+            "shortname": "Admin",
+            "classitems": [],
+            "plugins": [],
+            "extensions": [],
+            "plugin_for": [],
+            "extension_for": [],
+            "file": "admin.js",
+            "line": 3,
+            "description": "与管理员相关的类",
+            "is_constructor": 1,
+            "example": [
+                "\n\tvar newadmin = new Admin();"
+            ]
+        },
+        "User": {
+            "name": "User",
+            "shortname": "User",
+            "classitems": [],
+            "plugins": [],
+            "extensions": [],
+            "plugin_for": [],
+            "extension_for": [],
+            "file": "user.js",
+            "line": 3,
+            "description": "一个用户类",
+            "is_constructor": 1,
+            "example": [
+                "\n\tvar newuser = new User(); "
+            ]
+        },
+        "Work": {
+            "name": "Work",
+            "shortname": "Work",
+            "classitems": [],
+            "plugins": [],
+            "extensions": [],
+            "plugin_for": [],
+            "extension_for": [],
+            "file": "work.js",
+            "line": 3,
+            "description": "一个作品类",
+            "is_constructor": 1,
+            "example": [
+                "\n\tvar newwork = new Work();"
+            ]
+        }
+    },
+    "elements": {},
+    "classitems": [
+        {
+            "file": "admin.js",
+            "line": 12,
+            "description": "表示管理员邮箱",
+            "itemtype": "property",
+            "name": "email 数据可唯一",
+            "type": "String",
+            "access": "private",
+            "tagname": "",
+            "class": "Admin"
+        },
+        {
+            "file": "admin.js",
+            "line": 19,
+            "description": "表示管理员密码",
+            "itemtype": "property",
+            "name": "password",
+            "type": "String",
+            "access": "private",
+            "tagname": "",
+            "class": "Admin"
+        },
+        {
+            "file": "admin.js",
+            "line": 36,
+            "description": "管理员身份核实",
+            "itemtype": "method",
+            "name": "checkAdmin",
+            "params": [
+                {
+                    "name": "value",
+                    "description": "管理员身份信息",
+                    "type": "Object"
+                }
+            ],
+            "return": {
+                "description": "admin  查到的关于这个管理员身份的所有信息",
+                "type": "Object"
+            },
+            "class": "Admin"
+        },
+        {
+            "file": "user.js",
+            "line": 12,
+            "description": "表示用户姓名",
+            "itemtype": "property",
+            "name": "name",
+            "type": "String",
+            "access": "private",
+            "tagname": "",
+            "class": "User"
+        },
+        {
+            "file": "user.js",
+            "line": 19,
+            "description": "表示用户邮箱",
+            "itemtype": "property",
+            "name": "email 数据库唯一",
+            "type": "String",
+            "access": "private",
+            "tagname": "",
+            "class": "User"
+        },
+        {
+            "file": "user.js",
+            "line": 26,
+            "description": "表示用户密码",
+            "itemtype": "property",
+            "name": "psw",
+            "type": "String",
+            "access": "private",
+            "tagname": "",
+            "class": "User"
+        },
+        {
+            "file": "user.js",
+            "line": 45,
+            "description": "用户身份核实",
+            "itemtype": "method",
+            "name": "checkUser",
+            "params": [
+                {
+                    "name": "value",
+                    "description": "用户身份信息(邮箱、密码)",
+                    "type": "Object"
+                }
+            ],
+            "return": {
+                "description": "user  查到的关于这个用户身份的所有信息",
+                "type": "Object"
+            },
+            "class": "User"
+        },
+        {
+            "file": "user.js",
+            "line": 56,
+            "description": "获取所有用户信息",
+            "itemtype": "method",
+            "name": "getUser",
+            "params": [
+                {
+                    "name": "UNKNOWN",
+                    "description": ""
+                }
+            ],
+            "return": {
+                "description": "users 查到所有用户的所有信息",
+                "type": "Object"
+            },
+            "class": "User"
+        },
+        {
+            "file": "user.js",
+            "line": 68,
+            "description": "通过邮箱信息获取用户信息",
+            "itemtype": "method",
+            "name": "getUserByEmail",
+            "params": [
+                {
+                    "name": "value",
+                    "description": "用户邮箱",
+                    "type": "Object"
+                }
+            ],
+            "return": {
+                "description": "user 查到的关于这个用户身份的所有信息",
+                "type": "Object"
+            },
+            "class": "User"
+        },
+        {
+            "file": "user.js",
+            "line": 79,
+            "description": "通过ID获取用户信息",
+            "itemtype": "method",
+            "name": "getUserById",
+            "params": [
+                {
+                    "name": "value",
+                    "description": "用户id",
+                    "type": "Object"
+                }
+            ],
+            "return": {
+                "description": "user 查到的关于这个用户身份的所有信息",
+                "type": "Object"
+            },
+            "class": "User"
+        },
+        {
+            "file": "work.js",
+            "line": 12,
+            "description": "表示作品主题",
+            "itemtype": "property",
+            "name": "theme",
+            "type": "String",
+            "access": "private",
+            "tagname": "",
+            "class": "Work"
+        },
+        {
+            "file": "work.js",
+            "line": 19,
+            "description": "表示作品描述",
+            "itemtype": "property",
+            "name": "describe",
+            "type": "String",
+            "access": "private",
+            "tagname": "",
+            "class": "Work"
+        },
+        {
+            "file": "work.js",
+            "line": 26,
+            "description": "表示用户头像地址",
+            "itemtype": "property",
+            "name": "head",
+            "type": "String",
+            "access": "private",
+            "tagname": "",
+            "class": "Work"
+        },
+        {
+            "file": "work.js",
+            "line": 33,
+            "description": "表示作品地址",
+            "itemtype": "property",
+            "name": "photo",
+            "type": "String",
+            "access": "private",
+            "tagname": "",
+            "class": "Work"
+        },
+        {
+            "file": "work.js",
+            "line": 40,
+            "description": "表示作品热度",
+            "itemtype": "property",
+            "name": "hotrate",
+            "type": "String",
+            "access": "private",
+            "tagname": "",
+            "class": "Work"
+        },
+        {
+            "file": "work.js",
+            "line": 47,
+            "description": "表示作品的作者ID",
+            "itemtype": "property",
+            "name": "userid",
+            "type": "String",
+            "access": "private",
+            "tagname": "",
+            "class": "Work"
+        },
+        {
+            "file": "work.js",
+            "line": 54,
+            "description": "表示作品的作者姓名",
+            "itemtype": "property",
+            "name": "username",
+            "type": "String",
+            "access": "private",
+            "tagname": "",
+            "class": "Work"
+        },
+        {
+            "file": "work.js",
+            "line": 72,
+            "description": "通过主题获取作品",
+            "itemtype": "method",
+            "name": "getWorks",
+            "params": [
+                {
+                    "name": "theme",
+                    "description": "",
+                    "type": "Object"
+                }
+            ],
+            "return": {
+                "description": "works  查到关于这个主题的所有作品",
+                "type": "Object"
+            },
+            "class": "Work"
+        },
+        {
+            "file": "work.js",
+            "line": 83,
+            "description": "获取所有作品",
+            "itemtype": "method",
+            "name": "getWorksList",
+            "params": [
+                {
+                    "name": "UNKNOWN",
+                    "description": ""
+                }
+            ],
+            "return": {
+                "description": "works  查到所有作品",
+                "type": "Object"
+            },
+            "class": "Work"
+        },
+        {
+            "file": "work.js",
+            "line": 94,
+            "description": "通过用户id获取作品",
+            "itemtype": "method",
+            "name": "getWorksByUserId",
+            "params": [
+                {
+                    "name": "userid",
+                    "description": "",
+                    "type": "Object"
+                }
+            ],
+            "return": {
+                "description": "works  查到关于这个用户的所有作品",
+                "type": "Object"
+            },
+            "class": "Work"
+        },
+        {
+            "file": "work.js",
+            "line": 105,
+            "description": "通过作品id删除作品",
+            "itemtype": "method",
+            "name": "deleteWorkById",
+            "params": [
+                {
+                    "name": "workid",
+                    "description": "用户身份信息(邮箱、密码)",
+                    "type": "Object"
+                }
+            ],
+            "return": {
+                "description": ""
+            },
+            "class": "Work"
+        },
+        {
+            "file": "work.js",
+            "line": 116,
+            "description": "通过作品id、主题、描述更新作品",
+            "itemtype": "method",
+            "name": "updateWork",
+            "params": [
+                {
+                    "name": "workid",
+                    "description": "",
+                    "type": "String"
+                },
+                {
+                    "name": "theme",
+                    "description": "",
+                    "type": "String"
+                },
+                {
+                    "name": "descibe",
+                    "description": "",
+                    "type": "String"
+                }
+            ],
+            "return": {
+                "description": ""
+            },
+            "class": "Work"
+        }
+    ],
+    "warnings": [
+        {
+            "message": "param name missing: {}",
+            "line": " user.js:56"
+        },
+        {
+            "message": "param name missing: {}",
+            "line": " work.js:83"
+        }
+    ]
+}

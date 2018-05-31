@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+	<meta name="renderer" content="webkit">
+	<meta http-equiv="Cache-Control" content="no-siteapp" />
+    <meta name="description" content="you are funny"/>
+    <meta name="keywords" content="fuckyou"/>
+    <meta name="author" content="ginny, gny315@163.com"/>
+    <meta name="robots" content="index"/>
+    <meta name="viewport" content="initial-scale=1, maximum-scale=3, minimum-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes"/>
+    <meta name="apple-mobile-web-app-status-bar-style" content="blank"/>
+    <meta name="format-detection" content="telephone=no"/>
+	<link rel="stylesheet" type="text/css" href="css/reset.css">
+	<link rel="stylesheet" type="text/css" href="css/head.css">
+	<link rel="stylesheet" type="text/css" href="css/comeon.css">
+	<link rel="stylesheet" type="text/css" href="css/onlinepaint.css">
+	<script type="text/javascript" src="js/lib/jquery.min.js"></script>
+	<script type="text/javascript" src＝"js/lib/fastclick.js"></script>
+	<script type="text/javascript" src="js/lib/socket.io.js"></script>
+	<script type="text/javascript" src="js/onlinepaint.js"></script>
+
+	<title>online paint</title>
+</head>
+<body>
+
+<header>
+	<ul class='index_head comeon_head'>
+		<li class='index_head_pen'><a href="index.html">PenManBox</a></li>
+		<li class='index_head_theme'><a href="theme.html">theme</a></li>
+		<li class='index_head_comeon comeon_head_comeon'><a href="comeon.html">来一发</a></li>
+		<li class='index_head_home'><a href="home.html">home</a></li>
+		<li class='index_head_login'></li>
+	</ul>
+</header>
+
+<div id="container" class="container online">
+
+<div id="op_page1" class="chooseroom">
+	<div class="chooseroom_describe">
+		<div class="chooseroom_dog"><img src="head/penmanbox_dog.png"><span></span></div>
+		<span>[玩儿法]</span>
+		<span>旁友，你可以选择创建新的房间或者加入好朋友的房间一起涂鸦！</span>
+		<span>penmanbox祝你玩的愉快！</span>	
+	</div>
+    <div class="chooseroom_choose" id="cr_choose">
+        <div type="button" id="createPaint">创建ROOM</div>
+        <div type="button" id="openPaint">打开ROOM</div>
+    </div>
+    <div class="hidechooseroom_id" id="cr_id">
+        <span>画板ID</span>
+        <input type="text" placeholder="请输入画板号码" name="paintId" id="paintId"/>
+	   <span>
+        <div type="button" id="openCanvas">打开</div>
+      </span>
+    </div>
+</div>
+
+<div id="op_page2" class="hidePaint">
+
+<div class="sendPop">
+<!-- 	<span class="onlineRoomId" id="onlineRoomId"></span> -->
+	<textarea></textarea> 
+	<div id="sendMsg">发送弹幕</div>
+</div>
+
+<div id="canvas">
+<canvas id='mycanvas' class="mycanvas">您的浏览器不支持这个功能</canvas>
+</div>
+
+<div class="paintSaveWrap">
+<div class="paintSave"><img src="" id="finish"/></div>
+</div>
+
+<div class="brush">
+<div class="brush_before">涂鸦工具</div>
+<div class="palette" id="palette">
+	<ul class="palette_one">
+		<li>#8a2be2</li>
+		<li>#9932cc/li>
+		<li>#ba55d3</li>
+		<li>#ee82ee</li>
+	</ul>
+	<ul class="palette_two">
+		<li>#8b0000</li>
+		<li>#ff0000</li>
+		<li>#f08080</li>
+		<li>#ffe4e1</li>
+	</ul>
+	<ul class="palette_three">
+		<li>#8b4513</li>
+		<li>#d2691e</li>
+		<li>#f4a460</li>
+		<li>#ffdab9</li>
+	</ul>
+	<ul class="palette_four">
+		<li>#daa520</li>
+		<li>#ffd700</li>
+		<li>#ffff00</li>
+		<li>#f0e68c</li>
+	</ul>
+	<ul class="palette_five">
+		<li>#008000</li>
+		<li>#3cb371</li>
+		<li>#9acd32</li>
+		<li>#90ee90</li>
+	</ul>
+	<ul class="palette_six">
+		<li>#191979</li>
+		<li>#0000ff</li>
+		<li>#1e90ff</li>
+		<li>#87cefa</li>
+	</ul>
+	<ul class="palette_seven">
+		<li>#000000</li>
+		<li>#808080</li>
+		<li>#d3d3d3</li>
+		<li>#ffffff</li>
+	</ul>
+</div>
+<div class="brushwidth" id="brushwidth">
+	<ul>
+		<li>特细</li>
+		<li>细</li>
+	</ul>
+	<ul>
+		<li>粗</li>
+		<li>特粗</li>
+	</ul>	
+</div>
+<div class="tool" id="tool">
+	<ul>
+		<li>画笔</li>
+		<li>橡皮</li>
+	</ul>
+</div>
+<div class="tool2" id="tool2">
+	<ul>
+		<li>清空</li>
+		<li>保存</li>
+	</ul>
+</div>
+</div><!-- brush -->
+
+<div class="onlineChat">
+    <div id='nowinline'data-toggle="dropdown">
+    <span class="caret"></span>
+    </div>
+    <div id='userlist'></div>
+</div>
+
+<div id="msgbox" class="msgbox">
+  <p class="msgboxP"></p>
+</div>
+
+</div><!-- op_page2 -->
+
+</div>
+	
+</body>
+</html>

@@ -1,0 +1,63 @@
+{
+	"data1":[
+		{
+			"name": "ginny",
+		    "theme": "华师校庆",
+		    "head":"img/roundhead.png",
+		    "photo":"img/img1_1.jpg",
+		    "hotrate":1
+		},
+		{
+			"name": "ginny",
+		    "theme": "华师校庆",
+		    "head":"img/roundhead.png",
+		    "photo":"img/img1_2.jpg"
+		},
+		{
+			"name": "ginny",
+		    "theme": "华师校庆",
+		    "head":"img/roundhead.png",
+		    "photo":"img/img1_3.jpg"
+		}
+	],
+	"data2":[
+		{
+			"name": "ginny",
+		    "theme": "华师校庆",
+		    "head":"img/roundhead.png",
+		    "photo":"img/img2_1.jpg"
+		},
+		{
+			"name": "ginny",
+		    "theme": "华师校庆",
+		    "head":"img/roundhead.png",
+		    "photo":"img/img2_2.jpg"
+		},
+		{
+			"name": "ginny",
+		    "theme": "华师校庆",
+		    "head":"img/roundhead.png",
+		    "photo":"img/img2_3.jpg"
+		}
+	],
+	"data3":[
+		{
+			"name": "ginny",
+		    "theme": "华师校庆",
+		    "head":"img/roundhead.png",
+		    "photo":"img/img3_1.jpg"
+		},
+		{
+			"name": "ginny",
+		    "theme": "华师校庆",
+		    "head":"img/roundhead.png",
+		    "photo":"img/img3_2.jpg"
+		},
+		{
+			"name": "ginny",
+		    "theme": "华师校庆",
+		    "head":"img/roundhead.png",
+		    "photo":"img/img3_3.jpg"
+		}
+	]
+}

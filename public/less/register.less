@@ -1,0 +1,249 @@
+@color_green:#15adbc;
+@color_pink:#F3C9DD;
+@color_pink_deep:#f47fb5;
+@color_gray:#D8D8D8;
+html,body{
+	width: 100%;
+	height: 100%;
+	background-color: @color_green;
+}
+.container{
+	width: 100%;
+	height: 100%;	
+	position: relative;
+}
+
+input[type="text"],input[type="password"]{
+	border:1px solid @color_gray;
+	//white-space: normal !important;
+}
+
+/*PC css*/
+@media screen and(min-width:765px){
+	html{
+		font-size:12px;
+	}
+
+	.login_allowloagin.animate{
+		-webkit-animation: shake 1s 3 3s forwards;
+  		animation: shake 1s 3 3s forwards;
+	}
+	.login_allowloagin{
+		position: absolute;
+		top: 5rem;
+    	right: 0;
+		width: 25rem;
+		height: 15rem;
+		border: 1rem solid @color_gray;
+		border-radius: 1rem;
+		background-color: #fff;
+		z-index: 9;
+	}
+	.login_allowlogin_show{
+		left: 5rem;
+		font-size: 2rem;
+		font-weight: bolder;
+		text-align: center;
+		line-height: 3rem;
+		margin-top: 3rem; 
+	}
+	.login_allowlogin_showword{
+		font-size: 1.5rem;
+		font-weight: normal;
+		text-align: left;
+		margin-left: 2rem;	
+		border: 1px solid @color_gray;
+		border-radius: 0.4rem; 
+		padding: 0 1rem;	
+	}
+	.login_allowlogin_photo{
+		width: 30%;
+		position: absolute;
+		right: 1rem;
+		top:6rem;
+		img{
+			width: 100%;
+		}
+	}
+	.login_allowlogin_tranigle{
+		position: absolute;
+		width: 0;
+		height: 0;
+		left: calc(~"50% - 1.5rem");
+		top:-3rem;
+		border-right: 1.5rem solid transparent;
+		border-left:1.5rem solid transparent;
+		border-bottom: 2rem solid @color_gray;
+	}
+	.login_allowlogin_rectangle{
+		position: absolute;
+		left: calc(~"50% - 4.5rem");
+		top:1rem;
+		width: 9rem;
+		height: 1.5rem;
+		background-color: @color_gray;
+		border-radius: 0.5rem;
+	}
+	.login_allowlogin_roundleft{
+		width: 2rem;
+		height: 2rem;
+		border-radius: 1rem;
+		background-color: @color_gray;
+		position: absolute;
+		left: 10%;
+		top:1rem;
+	}
+	.login_allowlogin_roundright{
+		width: 2rem;
+		height: 2rem;
+		border-radius: 1rem;
+		background-color: @color_gray;
+		position: absolute;
+		right: 10%;
+		top:1rem;
+	}
+	.login_writelogin_submit{
+		position: absolute;
+		width: 6rem;
+		height: 2rem;
+		text-align: center;
+		line-height: 2rem;
+		background-color: @color_gray;
+		z-index: 10;
+		font-size: 1rem;
+		border-radius: 1rem;
+		border: 0px solid #fff;
+		left: calc(~"50% - 3rem");
+		bottom: 4%;
+	}
+}
+
+/*mobile css*/
+@media screen and(min-width:320px) and (max-width:765px){
+	html{
+		font-size: 8px;
+	}
+	.login_allowloagin{
+		position: absolute;
+		left: calc(~"50% - 13.5rem");
+		margin:0 auto;
+		width: 25rem;
+		height: 15rem;
+		border: 1rem solid @color_gray;
+		border-radius: 1rem;
+		background-color: #fff;
+		z-index: 9;
+	}
+	.login_allowlogin_show{
+			margin-top:2rem;
+			left: 5rem;
+			font-size: 2rem;
+			font-weight: bolder;
+			text-align: center;
+	}
+	.login_allowlogin_showword{
+		font-size: 1.5rem;
+		font-weight: normal;
+		text-align: left;
+		padding: 0.3rem 1rem;
+    	display: block;
+    	margin: 0 auto;
+	}
+	.login_allowlogin_photo{
+		width: 30%;
+		position: absolute;
+		right: 1rem;
+		top:6rem;
+		img{
+			width: 100%;
+		}
+	}
+	.login_allowlogin_tranigle{
+		position: absolute;
+		width: 0;
+		height: 0;
+		left: calc(~"50% - 1.5rem");
+		top:-3rem;
+		border-right: 1.5rem solid transparent;
+		border-left:1.5rem solid transparent;
+		border-bottom: 2rem solid @color_gray;
+	}
+	.login_allowlogin_rectangle{
+		position: absolute;
+		left: calc(~"50% - 4.5rem");
+		top:1rem;
+		width: 9rem;
+		height: 1.5rem;
+		background-color: @color_gray;
+		border-radius: 0.5rem;
+	}
+	.login_allowlogin_roundleft{
+		width: 2rem;
+		height: 2rem;
+		border-radius: 1rem;
+		background-color: @color_gray;
+		position: absolute;
+		left: 10%;
+		top:1rem;
+	}
+	.login_allowlogin_roundright{
+		width: 2rem;
+		height: 2rem;
+		border-radius: 1rem;
+		background-color: @color_gray;
+		position: absolute;
+		right: 10%;
+		top:1rem;
+	}
+	.login_writelogin_submit{
+		position: absolute;
+		width: 6rem;
+		height: 2rem;
+		text-align: center;
+		line-height: 2rem;
+		background-color: @color_gray;
+		z-index: 10;
+		font-size: 1rem;
+		border-radius: 1rem;
+		border: 0px solid #fff;
+		left: calc(~"50% - 3rem");
+		bottom: 2%;
+	}
+	form{
+		color:#000;
+	}
+}
+
+/*
+css for zhengjian 
+ */
+@-webkit-keyframes shake {
+  0% {
+    -webkit-transform: rotate(-15deg);
+    transform: rotate(-15deg);
+  }
+  50% {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(-15deg);
+    transform: rotate(-15deg);
+  }
+}
+@keyframes shake {
+  0% {
+    -webkit-transform: rotate(-15deg);
+    transform: rotate(-15deg);
+  }
+  50% {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(-15deg);
+    transform: rotate(-15deg);
+  }
+}
+
+

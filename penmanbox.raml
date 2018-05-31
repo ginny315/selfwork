@@ -1,0 +1,76 @@
+#%RAML 0.8
+---
+title:penmanbox API
+baseUri:http://guoningyan.com/{version}
+version:v1
+/login:
+	get:
+        description:Retrieve demo info 
+        responses:
+			200:
+				body:
+					application/json:
+						example:|
+							{
+								"data":{
+									"name":"policeman",
+									"email":"110@110.com"
+									}
+								"success":true,
+								"state":200
+							}
+		
+	post:
+		queryParameters:
+			name:
+			email:
+			psd:
+		description:Send user info and retrieve name and email
+		responses:
+			200:
+				body:
+					application/json:
+						example:|
+							{
+								"data":{
+									"name":"guoningyan",
+									"sessionTime":"yyyy-mm-dd"
+									}
+								"success":true,
+								"state":200
+							}
+
+
+/api/index
+	get:
+		queryParameters:
+		description:get imgs for three hot areas
+		responses:
+			200:
+				body:
+					application/json:
+						example:{
+							"data1":[
+								{
+									"name": "ginny",
+								    "theme": "华师校庆",
+								    "head":"img/roundhead.png",
+								    "photo":"img/img1_1.jpg"
+								},
+								{
+									"name": "ginny",
+								    "theme": "华师校庆",
+								    "head":"img/roundhead.png",
+								    "photo":"img/img1_2.jpg"
+								},
+								{
+									"name": "ginny",
+								    "theme": "华师校庆",
+								    "head":"img/roundhead.png",
+								    "photo":"img/img1_3.jpg"
+								}
+							],
+							"data2":[],
+							"data3":[]
+						}
+			

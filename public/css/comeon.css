@@ -1,0 +1,366 @@
+html,
+body {
+  width: 100%;
+  height: 100%;
+  background-color: #15adbc;
+}
+@media screen and (min-width: 765px) {
+  html {
+    font-size: 12px;
+  }
+  .comeon_note {
+    z-index: 5;
+    position: relative;
+    width: 35rem;
+    height: 25rem;
+    border-radius: 3rem;
+    border: 2px solid #726F6F;
+    background-color: #d8d8d8;
+    margin: 0 auto;
+    margin-top: 1rem;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    padding: 2rem;
+    font-size: 1.6rem;
+  }
+  .comeon_note input,
+  .comeon_note textarea {
+    width: 40%;
+    height: 2rem;
+    border: 0px solid #726F6F;
+    border-radius: 1rem;
+    padding: 0 1rem;
+    word-wrap: break-word;
+    background-color: #fff;
+    resize: none;
+  }
+  .comeon_note .comeon_note_describeinput {
+    height: 6rem;
+  }
+  .comeon_note .comeon_note_submit {
+    width: 5rem;
+    height: 5rem;
+    background-color: #726F6F;
+    color: #d8d8d8;
+    text-align: center;
+    line-height: 5rem;
+    position: absolute;
+    border-radius: 2.5rem;
+    font-size: 2rem;
+    border: 0px solid #111;
+    left: 47%;
+    bottom: 0.5rem;
+  }
+  .comeon_note .comeon_pic_show {
+    width: 40%;
+    height: 16rem;
+    border: 2px dotted #726F6F;
+    right: 2rem;
+    position: absolute;
+    top: 2rem;
+  }
+  .comeon_note .comeon_pic_show img {
+    width: 100%;
+  }
+  .comeon_head_comeon {
+    color: #fff;
+    position: relative;
+  }
+  .comeon_head_comeon:hover {
+    color: #15adbc;
+  }
+  .comeon_choosetry {
+    position: absolute;
+    background-color: #000;
+    color: #fff;
+    font-size: 1.5rem;
+  }
+  .comeon_head ul {
+    display: none;
+    font-size: 1.5rem;
+  }
+  .comeon_head li:hover > ul {
+    display: block;
+  }
+}
+@media screen and (min-width: 320px) and (max-width: 765px) {
+  html {
+    font-size: 8px;
+  }
+  .comeon_note {
+    z-index: 5;
+    position: relative;
+    width: 100%;
+    height: 25rem;
+    border-radius: 3rem;
+    border: 2px solid #726F6F;
+    background-color: #d8d8d8;
+    margin: 0 auto;
+    margin-top: 1rem;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    padding: 2rem;
+    font-size: 1.6rem;
+  }
+  .comeon_note input,
+  .comeon_note textarea {
+    width: 80%;
+    height: 2rem;
+    border: 0px solid #726F6F;
+    border-radius: 1rem;
+    padding: 0 1rem;
+    word-wrap: break-word;
+    background-color: #fff;
+    resize: none;
+  }
+  .comeon_note input[type="submit"] {
+    display: none;
+  }
+  .comeon_note .comeon_note_describeinput {
+    height: 6rem;
+  }
+  .comeon_note .comeon_note_submit {
+    width: 5rem;
+    height: 5rem;
+    background-color: #726F6F;
+    color: #d8d8d8;
+    text-align: center;
+    line-height: 5rem;
+    position: absolute;
+    border-radius: 2.5rem;
+    font-size: 2rem;
+    border: 0px solid #111;
+    left: 47%;
+    bottom: 0.5rem;
+  }
+  .comeon_note .comeon_pic_show {
+    display: none;
+  }
+  .comeon_head li:nth-child(2):not(.not),
+  .comeon_head li:nth-child(4),
+  .comeon_head li:nth-child(5) {
+    display: none;
+  }
+  .comeon_head li:nth-child(3) {
+    height: 10rem;
+    margin-top: -5rem;
+    font-size: 0;
+    line-height: 5rem;
+  }
+  .comeon_head li:nth-child(3) ul {
+    font-size: 1rem;
+  }
+  .comeon_head li:nth-child(3) ul li:first-child {
+    display: none;
+  }
+  header {
+    height: 10rem;
+  }
+}
+.container {
+  width: 100%;
+}
+@-webkit-keyframes hat {
+  0% {
+    -moz-transform: scale(3);
+    -ms-transform: scale(3);
+    -o-transform: scale(3);
+    -webkit-transform: scale(3);
+    transform: scale(3);
+  }
+  100% {
+    -moz-transform: scale(1);
+    -ms-transform: scale(1);
+    -o-transform: scale(1);
+    -webkit-transform: scale(1);
+    transform: scale(1);
+  }
+}
+@keyframes hat {
+  0% {
+    -moz-transform: scale(3);
+    -ms-transform: scale(3);
+    -o-transform: scale(3);
+    -webkit-transform: scale(3);
+    transform: scale(3);
+  }
+  100% {
+    -moz-transform: scale(1);
+    -ms-transform: scale(1);
+    -o-transform: scale(1);
+    -webkit-transform: scale(1);
+    transform: scale(1);
+  }
+}
+@-o-keyframes hat {
+  0% {
+    -moz-transform: scale(3);
+    -ms-transform: scale(3);
+    -o-transform: scale(3);
+    -webkit-transform: scale(3);
+    transform: scale(3);
+  }
+  100% {
+    -moz-transform: scale(1);
+    -ms-transform: scale(1);
+    -o-transform: scale(1);
+    -webkit-transform: scale(1);
+    transform: scale(1);
+  }
+}
+@-moz-keyframes hat {
+  0% {
+    -moz-transform: scale(3);
+    -ms-transform: scale(3);
+    -o-transform: scale(3);
+    -webkit-transform: scale(3);
+    transform: scale(3);
+  }
+  100% {
+    -moz-transform: scale(1);
+    -ms-transform: scale(1);
+    -o-transform: scale(1);
+    -webkit-transform: scale(1);
+    transform: scale(1);
+  }
+}
+@-ms-keyframes hat {
+  0% {
+    -moz-transform: scale(3);
+    -ms-transform: scale(3);
+    -o-transform: scale(3);
+    -webkit-transform: scale(3);
+    transform: scale(3);
+  }
+  100% {
+    -moz-transform: scale(1);
+    -ms-transform: scale(1);
+    -o-transform: scale(1);
+    -webkit-transform: scale(1);
+    transform: scale(1);
+  }
+}
+.comeon_hat {
+  width: 10rem;
+  height: 10rem;
+  border: 0px solid #979797;
+  margin: 0 auto;
+  position: relative;
+  margin-top: 1rem;
+  z-index: 15;
+  -moz-animation: hat 3s 1 0s forwards;
+  -ms-animation: hat 3s 1 0s forwards;
+  -o-animation: hat 3s 1 0s forwards;
+  -webkit-animation: hat 3s 1 0s forwards;
+  animation: hat 3s 1 0s forwards;
+}
+.comeon_hat_roundup {
+  width: 5rem;
+  height: 5rem;
+  border-radius: 2.5rem;
+  background-color: #726F6F;
+  position: absolute;
+  top: -1.5rem;
+  left: 2.5rem;
+  -moz-transform: scaleY(0.5);
+  -ms-transform: scaleY(0.5);
+  -o-transform: scaleY(0.5);
+  -webkit-transform: scaleY(0.5);
+  transform: scaleY(0.5);
+  border: 0px solid #979797;
+  z-index: 10;
+}
+.comeon_hat_rect {
+  width: 5rem;
+  height: 6rem;
+  background-color: #696969;
+  border: 0px solid #979797;
+  position: absolute;
+  top: 1.2rem;
+  left: 2.5rem;
+  z-index: 9;
+}
+.comeon_hat_rectdown {
+  width: 5rem;
+  height: 0.8rem;
+  background-color: #D8D8D8;
+  border: 0px solid #979797;
+  position: absolute;
+  top: 7.2rem;
+  left: 2.5rem;
+  z-index: 9;
+}
+.comeon_hat_rounddown {
+  width: 12rem;
+  height: 12rem;
+  border-radius: 6rem;
+  background-color: #726F6F;
+  position: absolute;
+  top: 2rem;
+  left: -1rem;
+  -moz-transform: scaleY(0.3);
+  -ms-transform: scaleY(0.3);
+  -o-transform: scaleY(0.3);
+  -webkit-transform: scaleY(0.3);
+  transform: scaleY(0.3);
+  border: 0px solid #979797;
+  z-index: 10;
+  box-shadow: inset 0px 1px 3px #fff;
+  z-index: 8;
+}
+.comeon_glass {
+  width: 8rem;
+  height: 4rem;
+  border: 0px solid #979797;
+  position: absolute;
+  z-index: 11;
+  left: calc(50% - 4rem);
+}
+.comeon_glass .comeon_glass_left {
+  width: 3.5rem;
+  height: 2.5rem;
+  background-color: #000;
+  position: absolute;
+  border-radius: 1rem;
+}
+.comeon_glass .comeon_glass_left:before,
+.comeon_glass .comeon_glass_right:before {
+  content: '';
+  width: 3rem;
+  height: 0.5rem;
+  position: absolute;
+  top: 0.5rem;
+  background-color: #000;
+  -moz-transform: rotate(15deg);
+  -ms-transform: rotate(15deg);
+  -o-transform: rotate(15deg);
+  -webkit-transform: rotate(15deg);
+  transform: rotate(15deg);
+}
+.comeon_glass .comeon_glass_left:before {
+  left: -3rem;
+}
+.comeon_glass .comeon_glass_right:before {
+  right: -3rem;
+  -moz-transform: rotate(-15deg);
+  -ms-transform: rotate(-15deg);
+  -o-transform: rotate(-15deg);
+  -webkit-transform: rotate(-15deg);
+  transform: rotate(-15deg);
+}
+.comeon_glass .comeon_glass_right {
+  width: 3.5rem;
+  height: 2.5rem;
+  background-color: #000;
+  position: absolute;
+  border-radius: 1rem;
+  right: 0;
+}
+.comeon_glass .comeon_glass_midrect {
+  width: 3rem;
+  height: 0.5rem;
+  position: absolute;
+  left: 3.5rem;
+  top: 1rem;
+  background-color: #000;
+}

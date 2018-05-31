@@ -1,0 +1,125 @@
+@media screen and (min-width: 765px) {
+  html {
+    font-size: 10px;
+  }
+  header {
+    padding: 0 10%;
+    width: 80%;
+    height: 5rem;
+    line-height: 5rem;
+    text-align: center;
+    background-color: #000;
+  }
+  header ul {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  header ul li:not(.not) {
+    font-size: 20px !important;
+  }
+  header ul li {
+    cursor: pointer;
+    -webkit-box-flex: 1;
+    -webkit-flex: 1;
+    -ms-flex: 1;
+    flex: 1;
+    width: 100%;
+    list-style: none;
+    display: inline-block;
+  }
+  header ul li a {
+    color: #eee !important;
+  }
+  header ul li:first-child:not(.not) {
+    -webkit-box-flex: 2;
+    -webkit-flex: 2;
+    -ms-flex: 2;
+    flex: 2;
+    width: 100%;
+    font-size: 25px !important;
+  }
+  header ul li:first-child:not(.not) a {
+    color: #15adbc !important;
+  }
+  header ul li:hover a {
+    color: #15adbc !important;
+  }
+  header ul li:nth-child(5) {
+    font-size: 15px !important;
+  }
+  header ul li:nth-child(5) span {
+    white-space: nowrap;
+  }
+  header ul li:nth-child(5) div > span:last-child {
+    color: #d8d8d8;
+  }
+  header .index_log:hover a:last-child {
+    color: #f47fb5 !important;
+  }
+  header .index_log a:first-child:before {
+    content: '|';
+    position: relative;
+    left: 49px;
+    color: #fff;
+  }
+  header .index_log a:last-child {
+    margin-left: 1rem;
+  }
+  header .index_log .header_welcome {
+    color: #15adbc;
+  }
+}
+@media screen and (min-width: 320px) and (max-width: 765px) {
+  html {
+    font-size: 8px;
+  }
+  header {
+    padding: 0 10%;
+    width: 80%;
+    height: 25rem;
+    line-height: 5rem;
+    text-align: center;
+    background-color: #000;
+  }
+  header ul {
+    width: 100%;
+  }
+  header ul li {
+    cursor: pointer;
+    width: 100%;
+    list-style: none;
+    font-size: 2rem;
+  }
+  header ul li a {
+    color: #eee !important;
+  }
+  header ul li:first-child {
+    -webkit-box-flex: 2;
+    -webkit-flex: 2;
+    -ms-flex: 2;
+    flex: 2;
+    width: 100%;
+    font-size: 2.5rem;
+  }
+  header ul li:first-child a {
+    color: #15adbc !important;
+  }
+  header ul li:hover a {
+    color: #15adbc !important;
+  }
+  header ul li:nth-child(5) {
+    font-size: 1.5rem;
+    right: 0;
+    white-space: nowrap;
+    color: #fff;
+    position: relative;
+  }
+  header .index_log:hover a:last-child {
+    color: #f47fb5 !important;
+  }
+  header .index_log a:last-child {
+    margin-left: 10%;
+  }
+}

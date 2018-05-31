@@ -1,0 +1,8 @@
+span,
+ul {
+  display: inline-block;
+}
+ul {
+  -webkit-padding-start: 0px;
+  padding: 0 10px;
+}
